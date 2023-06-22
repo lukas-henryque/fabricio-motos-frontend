@@ -1,0 +1,148 @@
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  background: linear-gradient(72deg, #3debb0 1%, #8956f3 99%);
+}
+
+.navlink {
+  color: blue;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ed2630;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 32px;
+}
+
+/* caso duvida olhar 30:01 do video*/
+
+.body-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.navbar-container {
+  display: flex;
+  height: 10%;
+  width: 100%;
+  background-color: green;
+}
+
+.navbar-container nav {
+  width: 100%;
+}
+
+.carrossel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: blue;
+}
+
+.carrossel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.imagem-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-color: purple; */
+}
+
+.imagem-container input {
+  display: none;
+}
+
+.imagens {
+  display: flex;
+}
+
+.imagem {
+  width: 70%;
+  transition: 0.9s;
+}
+
+.imagem img {
+  height: 100%;
+  width: 100%;
+}
+
+#img1:checked ~ .s1 {
+  margin-left: 0;
+}
+
+#img2:checked ~ .s1 {
+  margin-left: -34%;
+}
+
+#img3:checked ~ .s1 {
+  margin-left: -68%;
+}
+
+.navegacao-container {
+  display: flex;
+}
+
+.barra-navegacao {
+  width: 70px;
+  height: 15px;
+  margin-right: 5px;
+  border: 2px solid #1e0f9e;
+  border-radius: 5px;
+  transition: 0.6s;
+  cursor: pointer;
+}
+
+.barra-navegacao:hover {
+  background-color: #fff;
+}
+
+.info-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: yellow;
+  gap: 2rem;
+}
+
+.info-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 500px;
+  background-color: #3debb0;
+}
+
+.info-card img {
+  width: 500px;
+  min-height: 250px;
+  max-height: 250px;
+}
