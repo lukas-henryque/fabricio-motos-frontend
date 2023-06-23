@@ -4,11 +4,18 @@ body {
   height: 100vh;
   width: 100vw;
   box-sizing: border-box;
-  background: linear-gradient(72deg, #3debb0 1%, #8956f3 99%);
+  background: linear-gradient(180deg, #292929 1%, #575757 99%);
 }
 
 .navlink {
-  color: blue;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 20px;
+}
+
+.navlink:hover {
+  color: rgb(182, 182, 182);
   text-decoration: none;
   transition: 0.3s;
   font-size: 20px;
@@ -18,7 +25,7 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #ed2630;
+  background-color: #404040;
 }
 
 .nav-list {
@@ -31,7 +38,73 @@ nav {
   margin-left: 32px;
 }
 
-/* caso duvida olhar 30:01 do video*/
+.carrossel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.carrossel {
+  padding: 4rem;
+  width: 60%;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.navigation {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+}
+
+.bar {
+  width: 70px;
+  height: 15px;
+  border: 2px solid #72c6db;
+  margin-left: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+.bar:hover {
+  background-color: #fff;
+}
+
+input {
+  display: none;
+}
+
+.slides {
+  display: flex;
+  width: 300%;
+  height: 100%;
+}
+
+.slide {
+  width: 34%;
+  transition: 0.9s;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+}
+
+#slide1:checked ~ .s1 {
+  margin-left: 0;
+}
+
+#slide2:checked ~ .s1 {
+  margin-left: -34%;
+}
+
+#slide3:checked ~ .s1 {
+  margin-left: -68%;
+}
 
 .body-container {
   display: flex;
@@ -44,82 +117,10 @@ nav {
   display: flex;
   height: 10%;
   width: 100%;
-  background-color: green;
 }
 
 .navbar-container nav {
   width: 100%;
-}
-
-.carrossel-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  background-color: blue;
-}
-
-.carrossel {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-
-.imagem-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  /* background-color: purple; */
-}
-
-.imagem-container input {
-  display: none;
-}
-
-.imagens {
-  display: flex;
-}
-
-.imagem {
-  width: 70%;
-  transition: 0.9s;
-}
-
-.imagem img {
-  height: 100%;
-  width: 100%;
-}
-
-#img1:checked ~ .s1 {
-  margin-left: 0;
-}
-
-#img2:checked ~ .s1 {
-  margin-left: -34%;
-}
-
-#img3:checked ~ .s1 {
-  margin-left: -68%;
-}
-
-.navegacao-container {
-  display: flex;
-}
-
-.barra-navegacao {
-  width: 70px;
-  height: 15px;
-  margin-right: 5px;
-  border: 2px solid #1e0f9e;
-  border-radius: 5px;
-  transition: 0.6s;
-  cursor: pointer;
-}
-
-.barra-navegacao:hover {
-  background-color: #fff;
 }
 
 .info-container {
@@ -127,7 +128,6 @@ nav {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  background-color: yellow;
   gap: 2rem;
 }
 
@@ -135,10 +135,9 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   width: 500px;
   height: 500px;
-  background-color: #3debb0;
+  background-color: #a5a5a5;
 }
 
 .info-card img {
