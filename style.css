@@ -1,10 +1,3 @@
-.carrossel-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-
 .carrossel {
   /* ta dando bug nisso padding: 4rem;*/
   /*por que precisa ser em porcentagem? width: 60%;*/
@@ -13,27 +6,6 @@
   margin-top: 100px;
   height: 570px;
   width: 935px;
-}
-
-.navigation {
-  display: flex;
-  align-self: center;
-  margin-top: 1rem;
-}
-
-.bar {
-  width: 70px;
-  height: 15px;
-  border: 2px solid #72c6db;
-  margin-left: 5px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.6s;
-  margin-bottom: 15%;
-}
-
-.bar:hover {
-  background-color: #fff;
 }
 
 input {
@@ -68,6 +40,63 @@ input {
   margin-left: -68%;
 }
 
+.carrossel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.navigation {
+  display: flex;
+  align-self: center;
+  margin-top: 1rem;
+}
+
+.bar {
+  width: 70px;
+  height: 15px;
+  border: 2px solid #72c6db;
+  margin-left: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.6s;
+  margin-bottom: 15%;
+}
+
+.bar:hover {
+  background-color: #fff;
+}
+
+.descricao-container {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  text-align: center;
+  width: 50%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.descricao-container h1 {
+  color: #ffff;
+  font-size: 32px;
+}
+
+.descricao-container p {
+  color: #ffff;
+  font-size: 24px;
+}
+
+.descricao-container a {
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.descricao-container a:hover {
+  color: #cbcbcb;
+}
 .info-container {
   display: flex;
   flex-wrap: wrap;
@@ -80,16 +109,17 @@ input {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   width: 500px;
+  min-height: 500px;
   background-color: #b69edb;
-  border-radius: 30px;
+  border-radius: 15px;
 }
 
 .info-card img {
-  background-color: #fff;
+  background-color: white;
   width: 100%;
   height: 250px;
+  border-radius: 15px;
   object-fit: contain;
   /*min-height: 250px;
   max-height: 250px;*/
