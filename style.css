@@ -1,69 +1,41 @@
-body {
-  padding: 0;
-  margin: 0;
-  height: 100vh;
-  width: 100vw;
-  box-sizing: border-box;
-  background: linear-gradient(72deg, #3debb0 1%, #8956f3 99%);
-}
-
-.navlink {
-  color: blue;
-  text-decoration: none;
-  transition: 0.3s;
-  font-size: 20px;
-}
-
-nav {
+.carrossel-container {
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  background-color: #ed2630;
-  height: 10vh;
+  justify-content: center;
+  width: 100%;
 }
 
-.nav-list {
-  list-style: none;
-  display: flex;
-}
-
-.nav-list li {
-  letter-spacing: 3px;
-  margin-left: 32px;
-}
-
-.content {
-  height: 520px;
-  width: 935px;
-  border-radius: 20px;
+.carrossel {
+  /* ta dando bug nisso padding: 4rem;*/
+  /*por que precisa ser em porcentagem? width: 60%;*/
+  border-radius: 15px;
   overflow: hidden;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin-top: 100px;
+  height: 570px;
+  width: 935px;
 }
 
 .navigation {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translate(-50%);
   display: flex;
+  align-self: center;
+  margin-top: 1rem;
 }
 
 .bar {
   width: 70px;
-  height: 17px;
-  border: 2px solid #fff;
-  margin: 6px;
+  height: 15px;
+  border: 2px solid #72c6db;
+  margin-left: 5px;
   border-radius: 5px;
   cursor: pointer;
   transition: 0.6s;
+  margin-bottom: 15%;
 }
 
 .bar:hover {
   background-color: #fff;
 }
+
 input {
   display: none;
 }
@@ -74,7 +46,6 @@ input {
   height: 100%;
 }
 
-/* caso duvida olhar 30:01 do video*/
 .slide {
   width: 34%;
   transition: 0.9s;
@@ -97,21 +68,50 @@ input {
   margin-left: -68%;
 }
 
-.container {
-  background-color: coral;
-  height: 300px;
+.info-container {
   display: flex;
-  margin-top: 40%;
-  margin-left: 200px;
-  margin-right: 200px;
   flex-wrap: wrap;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
 }
 
-.elemento {
-  width: 300px;
-  height: 300px;
-  background-color: chartreuse;
-  border: 1px solid black;
-  margin-top: 100px;
+.info-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  background-color: #b69edb;
+  border-radius: 30px;
+}
+
+.info-card img {
+  background-color: #fff;
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  /*min-height: 250px;
+  max-height: 250px;*/
+}
+
+.info-card:hover {
+  box-shadow: 0px 0px 20px #ffff;
+}
+
+.info-container a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.info-descr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+a:hover {
+  color: rgb(13, 0, 255);
 }
